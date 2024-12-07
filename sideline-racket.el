@@ -71,10 +71,10 @@ Argument COMMAND is required in sideline backend."
 ;;;###autoload
 (defun sideline-racket-show (result &rest _)
   "Show RESULT with sideline."
-  (when (and value
+  (when (and result
              sideline-racket--buffer)
     (with-current-buffer sideline-racket--buffer
-      (funcall sideline-racket--callback (list (sideline-2str value))))))
+      (funcall sideline-racket--callback (list (sideline-2str result))))))
 
 (provide 'sideline-racket)
 ;;; sideline-racket.el ends here
