@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "sideline-racket"
          "0.1.0"
          "Show racket result with sideline")
